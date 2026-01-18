@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 1536px;
+}
+
+.body-text {
+  font-family: "Inter", sans-serif;
+  background-color: #1a0b2e;
+}
+/*Shared CSS*/
+/*Nav Bar Section CSS*/
+.nav-container,
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.nav-container {
+  margin: 30px 120px;
+  color: white;
+}
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo-text span {
+  background: var(
+    --Linear,
+    linear-gradient(
+      47.64deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    )
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-ul li {
+  display: flex;
+  justify-content: space-between;
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.nav-ul {
+  gap: 34px;
+}
+.nav-ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-src {
+  height: 24px;
+  width: 24px;
+}
+
+.nav-cart {
+  height: 26px;
+  width: 26px;
+}
+.feature-btn {
+  width: 155px;
+  height: 44px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-style: Bold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #e02c6d;
+  gap: 12px;
+  padding: 23px;
+  margin-top: 12px;
+  border-radius: 10000px;
+  background: var(
+    --Linear,
+    linear-gradient(
+      47.64deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    )
+  );
+  border: none;
+}
+
+.feature-btn:hover {
+  background: var(
+    --Linear,
+    linear-gradient(
+      47.64deg,
+      rgba(145, 0, 248, 1),
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1)
+    )
+  );
+}
