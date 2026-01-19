@@ -348,3 +348,61 @@
 .resources {
   grid-area: resources;
 }
+
+/*Featured Episode Section CSS*/
+.featured {
+  padding: 60px 8%;
+}
+
+.featured h2 {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.episodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.episode-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 16px;
+  transition: 0.3s;
+}
+
+.episode-card:hover {
+  transform: translateY(-8px);
+}
+
+.video-box {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.episode-card h3 {
+  color: white;
+  font-size: 18px;
+  margin: 15px 0 8px;
+}
+
+.episode-card p {
+  font-size: 14px;
+  color: #cfcfcf;
+  line-height: 1.5;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #2eff8b;
+  gap: 5px;
+}
+
+/*Featured Episode Section CSS*/
