@@ -128,7 +128,7 @@
 
 .hero-img {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
@@ -150,9 +150,25 @@
   height: 175px;
   position: absolute;
   z-index: 2;
-  top: 33%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+button.hero-new {
+  position: relative;
+  left: 123px;
+  top: -332px;
+  z-index: 9999;
+  padding: 8px 16px 8px 16px;
+  background-color: #03f68f;
+  border-radius: 50px;
+  font-style: Semi Bold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  border: none;
 }
 
 .hero-img h1 {
@@ -405,4 +421,149 @@
   gap: 5px;
 }
 
-/*Featured Episode Section CSS*/
+/*Host Section CSS*/
+.host-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.host-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #250e44;
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.host-image img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.host-content {
+  text-align: left;
+}
+
+.host-content h3 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.host-content p {
+  line-height: 1.7;
+  color: #d6cdee;
+  margin-bottom: 20px;
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff4fd8;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: 1px solid #533c72;
+}
+
+.social-icons a:hover {
+  background: #ff4fd8;
+  color: #120021;
+}
+
+/*Fotter Section CSS*/
+.footer {
+  background-image: url("B13-A02-TechWave/assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 90px 20px 45px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Logo */
+.logo {
+  top: -33px;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+h1.logo {
+  letter-spacing: 3px;
+}
+
+.logo span {
+  background: var(
+    --Linear,
+    linear-gradient(
+      47.64deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    )
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Platforms */
+.platforms {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 47px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+  top: -34px;
+}
+
+.platforms a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.platforms a:hover {
+  color: #ff3bd4;
+}
+
+.copyright {
+  position: relative;
+  font-size: 13px;
+  color: #b9a9d6;
+  top: -20px;
+}
