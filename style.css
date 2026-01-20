@@ -306,7 +306,7 @@ button.hero-new:hover {
 .about-container {
   text-align: center;
   width: auto;
-  height: 520px;
+  height: 584px;
 }
 hr {
   width: 1200px;
@@ -509,7 +509,7 @@ hr {
 }
 
 .host-card {
-  max-width: 900px;
+  max-width: 1067px;
   margin: 0 auto;
   background: #250e44;
   border-radius: 24px;
@@ -571,7 +571,7 @@ hr {
   color: #120021;
 }
 
-/*Fotter Section CSS*/
+/*Footer Section CSS*/
 .footer {
   background-image: url("B13-A02-TechWave/assets/footer-bg.png");
   background-repeat: no-repeat;
@@ -800,12 +800,6 @@ h1.logo {
     }
   }
 
-  /* Pop effect */
-  .pop-btn:hover {
-    transform: scale(1.12);
-    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
-  }
-
   /*About Section CSS*/
 
   .about-container {
@@ -885,6 +879,8 @@ h1.logo {
       "interview"
       "resources";
     gap: 24px;
+    top: -32px;
+    position: relative;
   }
 
   .card p {
