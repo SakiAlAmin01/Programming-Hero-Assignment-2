@@ -61,6 +61,11 @@
   color: white;
 }
 
+.nav-ul li a:hover {
+  color: rgb(253, 50, 206);
+  text-decoration: none;
+}
+
 .nav-src {
   height: 24px;
   width: 24px;
@@ -190,6 +195,28 @@ button.hero-new {
   border: none;
 }
 
+button.hero-new:hover {
+  background: #f7d44a;
+  animation: shake 0.4s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .hero-img h1 {
   margin-top: 25px;
   font-size: 60px;
@@ -258,16 +285,39 @@ button.hero-new {
   line-height: 19px;
 }
 
-/*About Section CSS*/
-.about-container {
-  width: 1600px;
-  height: 520px;
+.pop-btn {
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
+.pop-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
+}
+
+/*About Section CSS*/
+.about-container {
+  text-align: center;
+  width: auto;
+  height: 520px;
+}
+hr {
+  width: 1200px;
+  align-items: center;
+  text-align: center;
+  margin-left: 156px;
+}
 .about-text {
   text-align: center;
   color: white;
-  margin: 60px 250px 115px 159px;
+  margin: 60px 170px 115px 170px;
 }
 
 .about-text h2 {
@@ -387,6 +437,11 @@ button.hero-new {
 /*Featured Episode Section CSS*/
 .featured {
   padding: 60px 8%;
+}
+
+.video-box iframe {
+  width: 380px;
+  height: 214px;
 }
 
 .featured h2 {
@@ -648,6 +703,12 @@ h1.logo {
     background-size: contain;
     top: 23px;
   }
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 484px;
+    overflow: hidden;
+  }
 
   .hero-circle {
     width: 200px;
@@ -657,7 +718,7 @@ h1.logo {
 
   .hero-img {
     position: absolute;
-    top: 41%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -668,12 +729,27 @@ h1.logo {
     position: relative;
   }
 
+  button.hero-new {
+    position: relative;
+    left: 95px;
+    top: -184px;
+    z-index: 9999;
+    padding: 8px 16px 8px 16px;
+    background-color: #03f68f;
+    border-radius: 50px;
+    font-style: Semi Bold;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    border: none;
+  }
   .hero-mike {
     width: 70px;
     height: 93px;
     position: absolute;
     z-index: 2;
-    top: 22%;
+    top: 23%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -684,11 +760,71 @@ h1.logo {
     font-style: Extra Bold;
   }
 
+  .pop-btn {
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: #fff;
+    cursor: pointer;
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .pop-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
+  }
+
+  button.hero-new:hover {
+    background: #f7d44a;
+    animation: shake 0.4s infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-4px);
+    }
+    50% {
+      transform: translateX(4px);
+    }
+    75% {
+      transform: translateX(-4px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Pop effect */
+  .pop-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
+  }
+
   /*About Section CSS*/
+
+  .about-container {
+    text-align: center;
+    width: auto;
+    height: 520px;
+  }
+
+  hr {
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    margin-left: 80px;
+  }
+
   .about-text {
     text-align: center;
     color: white;
-    margin: 60px 1025px 60px 0px;
+    margin: 60px 0px;
   }
   .about-text p {
     line-height: 31px;
@@ -708,11 +844,35 @@ h1.logo {
     flex-wrap: wrap;
     margin-bottom: 211px;
   }
+
+  .average,
+  .industry {
+    padding-left: 18px;
+  }
+
+  .pop-btn {
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: #fff;
+    cursor: pointer;
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .pop-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
+  }
+
   /*Why Techwave Section CSS*/
   .why-techwave {
     padding: 80px 15%;
     background-color: #230e3d;
-    margin-top: 162px;
+    margin-top: 220px;
   }
 
   .features-grid {
@@ -731,7 +891,16 @@ h1.logo {
     font-size: 14px;
     line-height: 1.6;
     color: #cfc3ff;
-    padding: 16px;
+  }
+  .card.premium {
+    padding-top: 28px;
+  }
+
+  /*Why Techwave Section CSS*/
+
+  .video-box iframe {
+    width: 480px;
+    height: 272px;
   }
 
   /*Host Section CSS*/
@@ -762,6 +931,10 @@ h1.logo {
     gap: 12px;
     padding-left: 30%;
   }
+  .host-section {
+    padding: 52px 20px;
+    text-align: center;
+  }
 
   /*Footer Section CSS*/
   .footer {
@@ -772,6 +945,7 @@ h1.logo {
     padding-top: 0;
     text-align: center;
     color: #ffffff;
+    padding: 0px 0px 38px;
   }
 
   .platforms {
@@ -780,11 +954,11 @@ h1.logo {
     display: flex;
     position: relative;
     justify-content: center;
-    gap: 29px;
+    gap: 25px;
     flex-wrap: wrap;
     margin-bottom: 22px;
     top: 7px;
-    left: 135px;
+    left: 155px;
   }
 
   .logo {
